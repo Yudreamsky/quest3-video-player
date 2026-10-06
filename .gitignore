@@ -19,3 +19,7 @@
 # 测试视频不要提交
 /Assets/StreamingAssets/*.mp4
 /Assets/StreamingAssets/*.mp4.meta
+
+# 签名证书（只放在 GitHub Secrets 里，不要提交）
+*.keystore
+*.jks
