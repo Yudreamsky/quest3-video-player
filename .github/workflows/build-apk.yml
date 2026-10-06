@@ -1,8 +1,8 @@
 # 云端自动打包 Quest 3 APK。
-# - 推送到 main：打包并发布到 Releases（固定下载地址见 README「云端自动打包」）
+# - 推送到 main：打包并发布到 Releases（固定下载地址见 docs/cloud-build-and-install.md）
 # - 在 Actions 页手动运行（Run workflow）：任意分支都会打包并发布
 # - Pull Request：只打包，APK 在这次运行的 Artifacts 里
-# 需要的 Secrets 见 README。
+# 需要的 Secrets 见 docs/cloud-build-and-install.md。
 name: Build APK
 
 on:
@@ -32,7 +32,7 @@ jobs:
           UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
         run: |
           if [ -z "$UNITY_LICENSE" ] || [ -z "$UNITY_EMAIL" ] || [ -z "$UNITY_PASSWORD" ]; then
-            echo "::error::缺少 UNITY_LICENSE / UNITY_EMAIL / UNITY_PASSWORD，按 README「云端自动打包」添加到仓库 Secrets 后重新运行。"
+            echo "::error::缺少 UNITY_LICENSE / UNITY_EMAIL / UNITY_PASSWORD，按 docs/cloud-build-and-install.md 添加到仓库 Secrets 后重新运行。"
             exit 1
           fi
 
