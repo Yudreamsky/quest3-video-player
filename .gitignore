@@ -1,0 +1,21 @@
+# Unity
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/[Mm]emoryCaptures/
+*.csproj
+*.sln
+*.suo
+*.user
+*.apk
+*.aab
+.vs/
+.idea/
+.DS_Store
+# 测试视频不要提交
+/Assets/StreamingAssets/*.mp4
+/Assets/StreamingAssets/*.mp4.meta
